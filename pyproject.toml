@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "parentsassistantbot"
+version = "0.1.0"
+description = "Parents' assistant in daily care"
+authors = ["Victor Kozlov <vick23@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^2.22.1"
+fastapi = "^0.85.0"
+uvicorn = "^0.18.3"
+ormar = {extras = ["sqlite"], version = "^0.11.3"}
+pydantic = {extras = ["dotenv"], version = "^1.10.2"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
